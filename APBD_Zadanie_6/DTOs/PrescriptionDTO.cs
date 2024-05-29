@@ -2,9 +2,10 @@
 {
     public class PrescriptionDTO
     {
-        public List<PatientDTO> Patients { get; set; } = new();
-        public List<MedicamentDTO> Medicaments { get; set; } = new();
+        public int IdDoctor { get; set; }
         public DateTime Date { get; set; }
         public DateTime DueDate { get; set; }
+        public PatientDTO Patient { get; set; }
+        public List<MedicamentDTO> Medicaments { get; set; } = new();
     }
 }

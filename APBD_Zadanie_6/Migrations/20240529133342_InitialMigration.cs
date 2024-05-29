@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace APBD_Zadanie_6.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigartion : Migration
+    public partial class InitialMigration : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -138,14 +138,14 @@ namespace APBD_Zadanie_6.Migrations
                 columns: new[] { "IdPatient", "BirthDate", "FirstName", "LastName" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(1999, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3774), "Jakub", "Nowak" },
-                    { 2, new DateTime(2003, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3805), "Michal", "Kowalski" },
-                    { 3, new DateTime(1997, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3807), "Patient", "Patientowich" },
-                    { 4, new DateTime(2002, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3809), "Sergio", "Kotowich" },
-                    { 5, new DateTime(1974, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3811), "Ala", "Peronska" },
-                    { 6, new DateTime(1995, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3814), "Kot", "Zygmund" },
-                    { 7, new DateTime(1970, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3816), "Natiel", "Patient" },
-                    { 8, new DateTime(1957, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3818), "Jas", "Profase" }
+                    { 1, new DateTime(1999, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9352), "Jakub", "Nowak" },
+                    { 2, new DateTime(2003, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9449), "Michal", "Kowalski" },
+                    { 3, new DateTime(1997, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9458), "Patient", "Patientowich" },
+                    { 4, new DateTime(2002, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9464), "Sergio", "Kotowich" },
+                    { 5, new DateTime(1974, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9482), "Ala", "Peronska" },
+                    { 6, new DateTime(1995, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9491), "Kot", "Zygmund" },
+                    { 7, new DateTime(1970, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9497), "Natiel", "Patient" },
+                    { 8, new DateTime(1957, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9503), "Jas", "Profase" }
                 });
 
             migrationBuilder.InsertData(
@@ -153,9 +153,9 @@ namespace APBD_Zadanie_6.Migrations
                 columns: new[] { "IdPrescription", "Date", "DueDate", "IdDoctor", "IdPatient" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 5, 19, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1421), new DateTime(2024, 6, 25, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1432), 3, 1 },
-                    { 2, new DateTime(2024, 5, 25, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1436), new DateTime(2024, 7, 25, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1438), 2, 4 },
-                    { 3, new DateTime(2024, 5, 14, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1439), new DateTime(2024, 6, 25, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1441), 5, 2 }
+                    { 1, new DateTime(2024, 5, 22, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(5974), new DateTime(2024, 6, 28, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(6069), 3, 1 },
+                    { 2, new DateTime(2024, 5, 28, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(6080), new DateTime(2024, 7, 28, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(6084), 2, 4 },
+                    { 3, new DateTime(2024, 5, 17, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(6109), new DateTime(2024, 6, 28, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(6114), 5, 2 }
                 });
 
             migrationBuilder.InsertData(

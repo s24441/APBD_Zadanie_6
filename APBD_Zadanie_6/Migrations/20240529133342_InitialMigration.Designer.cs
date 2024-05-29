@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace APBD_Zadanie_6.Migrations
 {
     [DbContext(typeof(PharmacyContext))]
-    [Migration("20240526183053_InitialMigartion")]
-    partial class InitialMigartion
+    [Migration("20240529133342_InitialMigration")]
+    partial class InitialMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -183,56 +183,56 @@ namespace APBD_Zadanie_6.Migrations
                         new
                         {
                             IdPatient = 1,
-                            BirthDate = new DateTime(1999, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3774),
+                            BirthDate = new DateTime(1999, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9352),
                             FirstName = "Jakub",
                             LastName = "Nowak"
                         },
                         new
                         {
                             IdPatient = 2,
-                            BirthDate = new DateTime(2003, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3805),
+                            BirthDate = new DateTime(2003, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9449),
                             FirstName = "Michal",
                             LastName = "Kowalski"
                         },
                         new
                         {
                             IdPatient = 3,
-                            BirthDate = new DateTime(1997, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3807),
+                            BirthDate = new DateTime(1997, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9458),
                             FirstName = "Patient",
                             LastName = "Patientowich"
                         },
                         new
                         {
                             IdPatient = 4,
-                            BirthDate = new DateTime(2002, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3809),
+                            BirthDate = new DateTime(2002, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9464),
                             FirstName = "Sergio",
                             LastName = "Kotowich"
                         },
                         new
                         {
                             IdPatient = 5,
-                            BirthDate = new DateTime(1974, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3811),
+                            BirthDate = new DateTime(1974, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9482),
                             FirstName = "Ala",
                             LastName = "Peronska"
                         },
                         new
                         {
                             IdPatient = 6,
-                            BirthDate = new DateTime(1995, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3814),
+                            BirthDate = new DateTime(1995, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9491),
                             FirstName = "Kot",
                             LastName = "Zygmund"
                         },
                         new
                         {
                             IdPatient = 7,
-                            BirthDate = new DateTime(1970, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3816),
+                            BirthDate = new DateTime(1970, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9497),
                             FirstName = "Natiel",
                             LastName = "Patient"
                         },
                         new
                         {
                             IdPatient = 8,
-                            BirthDate = new DateTime(1957, 5, 26, 20, 30, 52, 964, DateTimeKind.Local).AddTicks(3818),
+                            BirthDate = new DateTime(1957, 5, 29, 15, 33, 42, 101, DateTimeKind.Local).AddTicks(9503),
                             FirstName = "Jas",
                             LastName = "Profase"
                         });
@@ -271,24 +271,24 @@ namespace APBD_Zadanie_6.Migrations
                         new
                         {
                             IdPrescription = 1,
-                            Date = new DateTime(2024, 5, 19, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1421),
-                            DueDate = new DateTime(2024, 6, 25, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1432),
+                            Date = new DateTime(2024, 5, 22, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(5974),
+                            DueDate = new DateTime(2024, 6, 28, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(6069),
                             IdDoctor = 3,
                             IdPatient = 1
                         },
                         new
                         {
                             IdPrescription = 2,
-                            Date = new DateTime(2024, 5, 25, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1436),
-                            DueDate = new DateTime(2024, 7, 25, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1438),
+                            Date = new DateTime(2024, 5, 28, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(6080),
+                            DueDate = new DateTime(2024, 7, 28, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(6084),
                             IdDoctor = 2,
                             IdPatient = 4
                         },
                         new
                         {
                             IdPrescription = 3,
-                            Date = new DateTime(2024, 5, 14, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1439),
-                            DueDate = new DateTime(2024, 6, 25, 20, 30, 52, 965, DateTimeKind.Local).AddTicks(1441),
+                            Date = new DateTime(2024, 5, 17, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(6109),
+                            DueDate = new DateTime(2024, 6, 28, 15, 33, 42, 104, DateTimeKind.Local).AddTicks(6114),
                             IdDoctor = 5,
                             IdPatient = 2
                         });

@@ -1,5 +1,5 @@
-﻿using APBD_Zadanie_6.Configuration;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
 namespace APBD_Zadanie_6.Models
 {
@@ -16,11 +16,12 @@ namespace APBD_Zadanie_6.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new DoctorConfig());
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            /*modelBuilder.ApplyConfiguration(new DoctorConfig());
             modelBuilder.ApplyConfiguration(new MedicamentConfig());
             modelBuilder.ApplyConfiguration(new PatientConfig());
             modelBuilder.ApplyConfiguration(new PrescriptionConfig());
-            modelBuilder.ApplyConfiguration(new PrescriptionMedicamentConfig());
+            modelBuilder.ApplyConfiguration(new PrescriptionMedicamentConfig());*/
         }
     }
 }
