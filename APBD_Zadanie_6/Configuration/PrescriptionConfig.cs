@@ -29,9 +29,9 @@ namespace APBD_Zadanie_6.Configuration
 
             // adding data
 
-            var patients = new List<Prescription>();
+            var prescriptions = new List<Prescription>();
 
-            patients.Add(new Prescription
+            prescriptions.Add(new Prescription
             {
                 IdPrescription = 1,
                 IdPatient = 1,
@@ -40,7 +40,7 @@ namespace APBD_Zadanie_6.Configuration
                 DueDate = DateTime.Now.AddDays(30)
             });
 
-            patients.Add(new Prescription
+            prescriptions.Add(new Prescription
             {
                 IdPrescription = 2,
                 IdPatient = 4,
@@ -49,7 +49,7 @@ namespace APBD_Zadanie_6.Configuration
                 DueDate = DateTime.Now.AddDays(60)
             });
 
-            patients.Add(new Prescription
+            prescriptions.Add(new Prescription
             {
                 IdPrescription = 3,
                 IdPatient = 2,
@@ -58,7 +58,7 @@ namespace APBD_Zadanie_6.Configuration
                 DueDate = DateTime.Now.AddDays(30)
             });
 
-            builder.HasData(patients);
+            builder.HasData(prescriptions);
         }
     }
 }

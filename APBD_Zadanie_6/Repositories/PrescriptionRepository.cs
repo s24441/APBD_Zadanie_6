@@ -43,14 +43,16 @@ namespace APBD_Zadanie_6.Repositories
                 .FirstOrDefaultAsync(p => p.IdPatient == prescription.Patient.IdPatient, cancellationToken);
             
             if (patientEntity == default)
-                patientEntity = new Patient {
+            {
+                patientEntity = new Patient
+                {
                     FirstName = prescription.Patient.FirstName,
                     LastName = prescription.Patient.LastName,
                     BirthDate = prescription.Patient.BirthDate
                 };
 
-            _context.Patients.Add(patientEntity);
-            await _context.SaveChangesAsync(cancellationToken);
+                _context.Patients.Add(patientEntity);
+            }
 
             var prescriptionEntity = new Prescription {
                 Date = prescription.Date,

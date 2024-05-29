@@ -45,7 +45,7 @@ namespace APBD_Zadanie_6.Repositories
                         Dose = pm.Dose,
                         Description = pm.Details
                     })
-                })
+                }).OrderBy(p => p.DueDate)
             } : default;
         }
     }
